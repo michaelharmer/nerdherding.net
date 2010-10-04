@@ -1,0 +1,28 @@
+---
+layout: default
+---
+<div id="main">
+			<div id="title">
+			<div class="maintitle"><a href="{{ page.url }}" rel="bookmark" title="{{ page.title }}">{{ page.title }}</a></div><div class="comment"><a href="{{ post.url  }}#disqus_thread">Comments</a></div>
+			<div class="clearing"></div>
+			</div>
+			<div class="postdata">Posted on {{ page.date | date_to_string }}</div>
+
+			{{ page.content }}
+
+      <p><div id="disqus_thread"></div>
+      <script type="text/javascript">
+        
+           var disqus_identifier = '{{ page.url }}';
+           var disqus_developer = 1;
+          
+        (function() {
+         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+         dsq.src = 'http://nerdherdingforbeginners.disqus.com/embed.js';
+         (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+      </script>
+      <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript=nerdherdingforbeginners">comments powered by Disqus.</a></noscript>
+      </p>
+
+</div>

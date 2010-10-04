@@ -1,0 +1,18 @@
+---
+layout: default
+---
+ 
+	<h1>Archives</h1>
+
+	<div id='archives'>
+
+<ul>
+  {% for post in site.posts %}
+  	    <li>
+  	      <div class="archivesleft"><a href="{{ post.url }}" rel="bookmark" title="Permanent link to {{ post.title }}">{{ post.title }}</a></div>
+          <div class="archivesright">{{ post.date | date_to_string }}</div>
+        </li>
+  	{% endfor  %}
+  	</ul>	
+</div>
+

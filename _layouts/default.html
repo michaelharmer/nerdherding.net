@@ -1,0 +1,151 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head profile="http://gmpg.org/xfn/11">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+	<title>Nerdherding for Beginners</title>
+	
+	<link href="/css/style.css" media="screen" rel="stylesheet" type="text/css" />
+  
+	<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://www.nerdherding.net/rss.xml" />
+
+</head>
+<body>
+  <div id="wrapper">
+	<div id="header">
+		
+	 <div class="wrapper">
+
+		<div id="headerleft">
+			<div id="blogtitle"><a href="/">Nerdherding for Beginners</a></div>
+			<div class="description">Working with nerds for fun and profit</div>
+		</div>
+		
+		<div id="headerright">
+			<div id="navcontainer">
+			<ul id="navlist">
+			<li><a href="/">Home</a></li> | 			<li><a href="/archives">Archives</a></li> | 			<li><a href="/about">About</a></li> | 			<li><a href="/contact">Contact</a></li>
+ 
+			</ul>
+			</div>
+		</div>
+		<div class="clearing"></div>
+		</div>
+	</div>
+	
+	 <div class="wrapper">
+
+	
+  
+  {{ content }}
+  </div>
+	 <div class="wrapper">
+  
+  <div id="sidebar">
+  		<h2>Recent posts</h2>
+
+  		<div id='recententry'>
+
+  	<ul>
+  	  {% for post in site.posts limit:5 %}
+  	  	    <li>
+  	  	      <div class="recentleft"><a href="{{ post.url }}" rel="bookmark" title="Permanent link to {{ post.title }}">{{ post.title }}</a></div>
+  	          <div class="recentright">{{ post.date | date_to_string }}</div>
+  	        </li>
+  	  	{% endfor  %}
+  	  	</ul>	
+  	</div>
+
+
+
+  		<div class="sidecolumn">
+
+  		<h2>Greatest Hits</h2>
+  			<div id="link">
+  				<ul><li><a href="/2005/01/31/dont-look-now-but-your-triangle-is-bent/">Don’t look now but your triangle is bent!</a></li>
+  <li><a href="/2006/05/02/first-make-someone-responsible-and-put-them-in-the-middle/">First make someone responsible and put them in the middle</a></li>
+  <li><a href="/2004/05/26/good-enough-is-the-new-perfect/">Good enough is the new perfect</a></li>
+  <li><a href="/2004/06/25/quality-nerds-dont-believe-in-magic/">Quality nerds don’t believe in magic</a></li>
+  <li><a href="/2004/05/20/talk-about-the-tradeoffs/">Talk about the tradeoffs</a></li>
+
+  <li><a href="/2005/01/12/you-cant-drop-a-ball-that-isnt-in-your-court/">You can’t drop a ball that isn’t in your court</a></li>
+  	</ul>
+  			</div>
+
+
+  	</div>
+  	<div class="sidecolumn">
+  	<h2>Categories</h2>
+  	<ul>
+
+  		<li class="cat-item cat-item-4"><a href="http://www.nerdherding.net/categories/canberra/" title="View all posts filed under Canberra">Canberra</a>
+  </li>
+  	<li class="cat-item cat-item-1"><a href="http://www.nerdherding.net/categories/general/" title="View all posts filed under General">General</a>
+  </li>
+  	<li class="cat-item cat-item-5"><a href="http://www.nerdherding.net/categories/how-to-get-promoted/" title="View all posts filed under How to get promoted">How to get promoted</a>
+  </li>
+  	<li class="cat-item cat-item-3"><a href="http://www.nerdherding.net/categories/management/" title="View all posts filed under Management">Management</a>
+  </li>
+  	<li class="cat-item cat-item-2"><a href="http://www.nerdherding.net/categories/software-development-aphorisms/" title="View all posts filed under Software Development Aphorisms">Software Development Aphorisms</a>
+
+  </li>
+
+  	</ul>
+
+  	<h2>Feeds</h2>
+  	<p>If you like this site, feel free to subscribe to my feeds</p>
+
+  	<ul id="share" >	
+  		<li class="share-RSS"><a href="/rss.xml" title="RSS articles">RSS (articles)</a></li>
+  	</ul>
+
+
+  	</div>
+
+  	<div class="sidecolumn">
+
+  		<h2>Links</h2>
+  			<div id="link">
+  				<ul><li><a href="http://www.crookedtimber.org/">Crooked Timber</a></li>
+  <li><a href="http://www.designbyfire.com/">Design by Fire</a></li>
+
+  <li><a href="http://www.focusedperformance.com/blogger.html">Frank Patrick&#8217;s Focused Performance Blog</a></li>
+  <li><a href="http://www.clarkeching.com/">I Think Not, Baby Puppy</a></li>
+  <li><a href="http://www.ideoplex.com/blog/">Ideoplex: Take the First Step</a></li>
+  <li><a href="http://bossavit.com/thoughts/">Incipient(thoughts) - Laurent Bossavit</a></li>
+  <li><a href="http://radio.javaranch.com/lasse/">Lasse&#8217;s Weblog</a></li>
+  <li><a href="http://www.roadtosurfdom.com/">The Road to Surfdom</a></li>
+  	</ul>
+  			</div>
+
+
+
+  	</div>
+
+  	<div class="clearing"></div>
+  </div>
+
+  	<div id="footer">
+  <p>
+  Nerdherding for Beginners is written by Michael Harmer, released under the <a href="http://creativecommons.org/licenses/by-nc/2.5/au/" target="_new">Creative Commons Attribution-Noncommercial 2.5 Australia licence</a> powered by <a href="http://wordpress.org">WordPress</a> and designed by <a href="http://www.xiapdesign.com/in" title="Design par XiAP">XiAP
+  Design Studio</a>.
+  </p>
+  </div>
+
+  </div>
+  </div>
+  </div>
+  <script type="text/javascript">
+  var disqus_shortname = 'nerdherdingforbeginners';
+  (function () {
+    var s = document.createElement('script'); s.async = true;
+    s.src = 'http://disqus.com/forums/nerdherdingforbeginners/count.js';
+    (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+  }());
+  </script>
+  
+  </body>
+  
+  </html>
+

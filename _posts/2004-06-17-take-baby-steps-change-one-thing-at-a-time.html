@@ -1,0 +1,13 @@
+--- 
+wordpress_id: 38
+title: Take baby steps (change one thing at a time)
+wordpress_url: /?p=38
+layout: post
+---
+I know that this is probably irrelevant to most experienced software engineers out there (forgive me if I'm telling you how to suck eggs) but this is advice I have had to give to plenty of software engineers in the past.  <em>Please don't do too much at one time without making sure everything works.</em>  
+
+There is nothing like the exasperation you will cause co-workers when you explain that you don't know if it was changes for feature 98b (2hrs), 98c (8hrs) or 98d (8hrs) that cause the system to crash at random.  Stop and test before you go on.  Please.  Its <del>silly</del> unprofessional to plow on, pretending you have finished when you haven't.  
+
+If you think you aren't able to test before a couple of days of work have been completed, then you really aren't trying very hard.  Re-order the tasks.  Introduce a cut-down version of a feature that will allow you to stop at that point and ensure things are working okay.  It is rarely necessary for an application to be "in pieces on the floor" for any significant length of time (>2 days) in an unworking state.
+
+Another instance of this trap is when you are asked to debug a complex application that just started to crash.  Never ever change more than one thing at a time in the code or its operating environment before seeing if the problem has been fixed.  You will need to know what was wrong before anyone will be satisfied that the problem was really fixed.  Saying that it was either because you increased the heapsize or fixed a filehandle leak probably won't be good enough, so why embarrass yourself?
