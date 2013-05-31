@@ -5,12 +5,12 @@ end
 
 desc "Build site using Jekyll"
 task :build do
-  jekyll("--no-auto")
+  jekyll("build")
 end
 
 desc "Serve on Localhost with port 4000"
 task :default do
-  jekyll("--server --auto")
+  jekyll("serve --watch")
 end
 
 desc "Deploy to Test"
