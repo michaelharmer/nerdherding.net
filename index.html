@@ -5,7 +5,7 @@ layout: default
 {% for post in site.posts limit:5%}
   <div id="main">
   			<div id="title">
-  			<div class="maintitle"><a href="{{ post.url }}" rel="bookmark" title="{{ post.title }}">{{ post.title }}</a></div><div class="comment"><a href="{{ post.url  }}#disqus_thread">Comments</a></div>
+  			<div class="maintitle"><a href="{{ post.url }}" rel="bookmark" title="{{ post.title }}">{{ post.title }}</a></div><div class="comment"><a href="{{ post.url  }}#disqus_thread" data-disqus-identifier="{{ post.url }}">Comments</a></div>
   			<div class="clearing"></div>
   			</div>
   			<div class="postdata">Posted on {{ post.date | date_to_string }}</div>
