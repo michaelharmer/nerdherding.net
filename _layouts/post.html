@@ -3,7 +3,7 @@ layout: default
 ---
 <div id="main">
 			<div id="title">
-			<div class="maintitle"><a href="{{ page.url }}" rel="bookmark" title="{{ page.title }}">{{ page.title }}</a></div><div class="comment"><a href="{{ post.url  }}#disqus_thread">Comments</a></div>
+			<div class="maintitle"><a href="{{ page.url }}" rel="bookmark" title="{{ page.title }}">{{ page.title }}</a></div><div class="comment"><a href="{{ page.url }}#disqus_thread" data-disqus-identifier="{{ page.url }}">Comments</a></div>
 			<div class="clearing"></div>
 			</div>
 			<div class="postdata">Posted on {{ page.date | date_to_string }}</div>
@@ -14,7 +14,6 @@ layout: default
       <script type="text/javascript">
         
            var disqus_identifier = '{{ page.url }}';
-           var disqus_developer = 1;
           
         (function() {
          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
